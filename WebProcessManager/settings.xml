@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<settings>
+  <!-- 
+    Utilize &quot; caso precise utilizas aspas duplas (") nos parâmetros 
+    Utilize &amp; caso precise utilizas "e comercial" (&) nos parâmetros 
+    Os atributos 'arguments' e 'workDir' dos nós de processos não é obrigatório
+  -->
+  <url>http://localhost:9080/</url>
+  <options>
+    <listSystemProcesses>False</listSystemProcesses>
+  </options>
+  <processes>
+    <process tag="calc" command="calc" />
+    <process tag="hw" command="cmd" arguments="/c &quot;echo Hello World &amp;&amp; pause&quot;" />
+  </processes>
+</settings>
